@@ -15,7 +15,7 @@
     import {posiColor} from './modules/posiColor.js';
 
     let data, 
-        //urlData = "http://localhost/samszo/HDR/docs/assets/data/complexityFrequency.json",
+        //urlData = "",
         urlData = "data/fr-en-evaluations_nationales_6eme_region.csv",
         width = 600, height=100, widthLibTxt=100, svg,
         //pVal='cpx',pLib='dim',pFreq='nbCpx',
@@ -43,7 +43,7 @@
                     let extX = d3.extent(d[1], d=>d[pVal]),
                         extY = d3.extent(d[1], d=>d[pFreq]),
                         o = {'vals':d[1],
-                        'extX':[1,extX[1]],
+                        'extX':[1,extX[1]],https://docs.google.com/spreadsheets/d/e/2PACX-1vQIMw0oqypBScNPgao2Zhb2hoQpbs2Sqh3fYvqmRcdfaJlmrYEQYcytX8M08ovm7VIm8CiGxsus21Y7/pub?output=csv
                         'scX':d3.scaleLinear().domain(extX).range([widthLibTxt, width-widthLibTxt]),
                         'scY':d3.scaleLinear().domain(extY).range([0, height])
                         };
